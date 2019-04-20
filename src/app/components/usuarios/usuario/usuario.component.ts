@@ -13,7 +13,7 @@ export class UsuarioComponent implements OnInit{
   public title = 'Form';
   public usuario:Usuario
   constructor(
-    private _usuariosService: UsuariosService
+    public _usuariosService: UsuariosService
   ){
     //console.log(this.title)
     this.usuario = new Usuario()
