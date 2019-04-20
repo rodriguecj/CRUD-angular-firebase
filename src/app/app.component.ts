@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './Model/usuario';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'form';
+  public title = 'Formulario';
+  public usuario:Usuario
+  constructor(){
+    //console.log(this.title)
+    this.usuario = new Usuario()
+  }
+  onSubmit(value){
+    console.log(value)
+  }
 }

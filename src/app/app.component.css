@@ -1,0 +1,12 @@
+label {
+    margin: 0
+}
+
+label,
+input {
+    display: block
+}
+
+tr {
+    margin-bottom: 2px;
+}

@@ -1,0 +1,15 @@
+<div class="card mb-5">
+    <div class="card-body">
+        <h1 class="card-title text-danger">{{ title }}</h1>
+        <table class="table table-sm table-hover">
+            <tbody>
+                <tr *ngFor="let user of userList">
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.lastname }}</td>
+                    <button type="button" class="btn btn-primary m-1" (click)='onEdit(user)'>Edit</button>
+                    <button type="button" class="btn btn-danger m-1" (click)='onDelete(user.$key)'>Delete</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
